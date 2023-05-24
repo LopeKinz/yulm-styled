@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: yulm-styled
-Version: 1.0.0
+Version: 1.1.0
 Summary: A package for colorizing and styling text
 Home-page: https://github.com/lopekinz/yulm-styled
 Author: LopeKinz
@@ -24,7 +24,7 @@ To use this module, import it into your Python script:
 ```python
 import sys
 import time
-from colorized_text import Color, FadedColor, RainbowColor, colorize_text, fade_text, rainbow_text, fade_color
+from yulm-styled import Color, FadedColor, RainbowColor, colorize_text, fade_text, rainbow_text, fade_color
 ```
 
 ### Colorizing Text
