@@ -42,12 +42,26 @@ class RainbowColor:
     def get_color(index):
         return RainbowColor.COLORS[index % len(RainbowColor.COLORS)]
 
+class BackgroundColor:
+    """
+    Class representing ANSI escape codes for background color.
+    """
+    BLACK = '\033[40m'
+    RED = '\033[41m'
+    GREEN = '\033[42m'
+    YELLOW = '\033[43m'
+    BLUE = '\033[44m'
+    MAGENTA = '\033[45m'
+    CYAN = '\033[46m'
+    WHITE = '\033[47m'
 
-def colorize_text(text, color):
+def colorize_text(text, color, background=None):
     """
-    Colorizes the given text with the specified color.
+    Colorizes the given text with the specified color and background.
     """
-    return f"{color}{text}{Color.RESET}"
+    color_code = color
+    background_code = background if background else ''
+    return f"{background_code}{color_code}{text}{Color.RESET}"
 
 
 def fade_text(text, color):
@@ -117,4 +131,4 @@ if __name__ == "__main__":
     print(colorize_text("Hello, World!", Color.RED))
     print(fade_text("Hello, World!", FadedColor.YELLOW))
     print(rainbow_text("Hello, World!"))
-    fade_color("Hello, World!", "RED", "BLUE", duration=2.0)
+    fade_color("Hello, World!", "RED", "GREEN", duration=2.0)
