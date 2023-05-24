@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='yulm-styled',
-    version='1.1.0',
+    version='1.2.0',
     author='LopeKinz',
     author_email='pinkyhax@gmail.com',
     description='A package for colorizing and styling text',
