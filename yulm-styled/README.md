@@ -9,7 +9,7 @@ To use this module, import it into your Python script:
 ```python
 import sys
 import time
-from colorized_text import Color, FadedColor, RainbowColor, colorize_text, fade_text, rainbow_text, fade_color
+from yulm-styled import Color, FadedColor, RainbowColor, colorize_text, fade_text, rainbow_text, fade_color
 ```
 
 ### Colorizing Text
